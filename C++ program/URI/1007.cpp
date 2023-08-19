@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    float A,B,C,D,dif;
+    cin>>A>>B>>C>>D;
+    dif=(A*B)-(C*D);
+    cout<<"DIFERENCA = "<<dif<<endl;
+    return 0;
+}
+
+

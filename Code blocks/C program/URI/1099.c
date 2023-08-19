@@ -1,0 +1,29 @@
+#include<stdio.h>
+main(void)
+{
+    int N,X,Y,i,j,max,min,sum=0;
+    scanf("%d",&N);
+    for(i=1;i<=N;i++)
+    {
+        scanf("%d %d",&X,&Y);
+        if(X>Y)
+        {
+            max=X;
+            min=Y;
+        }
+        else
+        {
+            max=Y;
+            min=X;
+        }
+        for(j=min+1;j<max;j++)
+        {
+            if(j%2==1)
+            {
+                sum=sum+j;
+            }
+        }
+        printf("%d\n",sum);
+        sum=0;
+    }
+}
